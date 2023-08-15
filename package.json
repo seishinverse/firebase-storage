@@ -1,0 +1,36 @@
+{
+  "name": "@seishinverse/firebase-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "homepage": "https://github.com/seishinverse/firebase-storage",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "build:types": "tsc -p ./tsconfig.json --outDir build --declaration true && api-extractor run",
+    "docs": "typedoc src --out docs"
+  },
+  "keywords": [
+    "firebase",
+    "storage"
+  ],
+  "author": "Dmytro Honchar <demetrgonchar@gmail.com> (https://github.com/mxrcury)",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.0",
+    "rollup": "^3.28.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "6.12.0",
+    "@types/google-cloud__storage": "^2.3.1",
+    "firebase-admin": "^11.10.1"
+  }
+}
