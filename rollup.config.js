@@ -10,7 +10,7 @@ export default [
     {
         input: "lib/index.ts",
         output: {
-            name: "storageManager",
+            name: "firebaseStorage",
             file: pkg.browser,
             format: "umd",
             file: "dist/index.js",
@@ -20,8 +20,7 @@ export default [
             commonjs(),
             json(),
             typescript({ tsconfig: "./tsconfig.json" }),
-        ],
-        preserverModules: true,
+        ]
     },
     {
         input: "lib/index.ts",

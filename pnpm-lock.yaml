@@ -32,9 +32,6 @@ devDependencies:
   rollup:
     specifier: ^3.28.0
     version: 3.28.0
-  rollup-plugin-peer-deps-external:
-    specifier: ^2.2.4
-    version: 2.2.4(rollup@3.28.0)
   ts-node:
     specifier: ^10.9.1
     version: 10.9.1(@types/node@20.5.0)(typescript@5.1.6)
@@ -184,7 +181,6 @@ packages:
   /@google-cloud/storage@6.12.0:
     resolution: {integrity: sha512-78nNAY7iiZ4O/BouWMWTD/oSF2YtYgYB3GZirn0To6eBOugjXVoK+GXgUXOl+HlqbAOyHxAVXOlsj3snfbQ1dw==}
     engines: {node: '>=12'}
-    requiresBuild: true
     dependencies:
       '@google-cloud/paginator': 3.0.7
       '@google-cloud/projectify': 3.0.0
@@ -1725,14 +1721,6 @@ packages:
       glob: 7.2.3
     dev: true
     optional: true
-
-  /rollup-plugin-peer-deps-external@2.2.4(rollup@3.28.0):
-    resolution: {integrity: sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==}
-    peerDependencies:
-      rollup: '*'
-    dependencies:
-      rollup: 3.28.0
-    dev: true
 
   /rollup@3.28.0:
     resolution: {integrity: sha512-d7zhvo1OUY2SXSM6pfNjgD5+d0Nz87CUp4mt8l/GgVP3oBsPwzNvSzyu1me6BSG9JIgWNTVcafIXBIyM8yQ3yw==}
